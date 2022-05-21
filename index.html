@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang = "ja">
+<head>
+<meta charset="utf-8">
+<title>英検３級熟語テスト</title>
+
+<link rel = "stylesheet" href = "css/style.css">
+</head>
+<meta name="viewport"
+   content="width=320,
+      height=480,
+      initial-scale=1.0,
+      minimum-scale=1.0,
+      maximum-scale=2.0,
+      user-scalable=yes" />
+
+<body>
+
+<section class = "container">
+
+<p id = "test-title">英検３級熟語テスト</p>
+
+<section id = "modal" class = "hidden">
+    <p>合格！！よくできました。</p>
+    <a><img src="img/win.png"> </a>
+    <br>
+<button id = "close">問題選択へ</button>
+</section>
+
+<section id = "modal2" class = "hidden">
+    <img src="img/ng.png">
+    <br>
+    <p id = "answer">残念！！やりなおしです。</p>
+    <button id = "okay">OK</button>
+</section>
+
+<section id = "modal3" class = "hidden">
+ <p id = "isCorrected"></p>
+ <img src="img/ok.png"> 
+</section>
+
+<a id = "reading"></a>
+  
+
+<form>
+        <select name="selectbox" id ="selectbox">
+            <option value="">--選択--</option>
+            <option value="1-10">1</option>
+            <option value="11-20">２</option>
+            <option value="21-30">３</option>
+            <option value="31-40">４</option>
+            <option value="41-50">５</option>
+            <option value="51-60">６</option>
+            <option value="61-70">７</option>
+            <option value="71-80">8</option>
+            <option value="81-90">9</option>
+            <option value="91-100">10</option>
+            <option value="101-110">11</option>
+       
+        </select>
+
+    </form>
+    <input id="reset"  type="button" value="リセット" onclick="ClickR();"/>
+<br>   
+<br>   
+
+<li id ="Qnum"> </li>
+
+<p id ="question"> 問題を選択してください。</p>
+     
+    <p id ="japanese"> </p>
+
+
+    <ul id = "choice1" class = "choices"  >
+
+      
+    </ul>   
+   
+    
+
+
+
+
+
+</section>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+
+
+<script src = "js/main.js"></script>
+</body>
+
+</html>

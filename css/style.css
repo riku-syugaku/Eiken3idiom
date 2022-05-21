@@ -1,0 +1,274 @@
+body{
+    background : white;
+    font-size : 14px;
+    font-family: Verdana,  sans-serif;
+}
+
+#test-title{
+    font-size:30px;
+    text-align: center;
+    font-weight:bold;
+}
+
+form , input{
+    display: inline;
+  }
+
+#genre{
+    font-size:30px;
+    float:center;
+    border-radius:4px;
+    width :200px;
+    text-align: center;
+}
+
+select{
+    font-size:20px;
+    float:center;
+    border-radius:4px;
+    width :100px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(216, 212, 228);
+    margin-bottom: 10px;
+    margin-right:25px;
+}
+
+
+input{
+    font-size:20px;
+    float:right;
+    border-radius:4px;
+    width :100px;
+    text-align: center;
+    padding: 10px;
+
+}
+
+
+
+
+
+
+.container{
+    width :400px;
+    margin:8px auto;
+    /* background:blue; */
+    border-radius:4px;
+    padding :16px;
+    position:relative;
+}
+
+#Qnum{
+    
+    font-size:30px;
+    font-weight:bold;
+    list-style: none;
+
+    /* text-align: left; */
+}
+#question, #japanese{
+    margin-bottom: 10px;
+    font-size:40px;
+
+    text-align: center;
+}
+
+#question{
+        font-weight:600;
+    }
+#japanese{
+        font-weight:300;
+    }
+
+
+#btn, #result > a{
+    background:#3498db ;
+    padding:8px;
+    border-radius: 4px;
+    cursor:pointer;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 0 #2880b9;
+}
+
+#btn.disabled {
+    margin-top: 20px;
+    background: #ccc;
+    box-shadow: 0 4px 0 #bbb;
+    opacity: 0.7;
+    padding:15px;
+}
+
+#result {
+    position:absolute;
+    width:300px;
+    background:#fff;
+    padding:30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    top:50px;
+    left:0;
+    right:0;
+    margin: 0 auto;
+    border-radius: 4px;
+    text-align: center;
+    transition:0.4s;
+
+}
+
+#result.hidden {
+    transform:translateY(-500px);
+}
+
+#result > p{
+        font-size:24px;
+}
+
+#result > a{
+    display:block;
+    text-decoration:none;
+}
+
+
+
+.choices{text-align: center;}
+
+#choice1 > li {
+    width: 60px;
+    font-size:20px;
+    color:white;
+    font-weight:bold;
+    list-style: none;
+    padding:0;
+    margin-right:25px ;
+    /* border:2px solid #ccc; */
+    border-radius:6px;
+    padding:25px 10px;
+    margin-bottom:15px;
+    cursor:pointer;
+    text-align: center;
+    background :rgb(48, 57, 182);
+    display:inline-block;
+}
+#choice2 > li:hover {
+background:#f8f8f8;
+}
+
+
+
+#choice2 > li.correct{
+    background: #d4edda;
+    border-color: #c3e6cd;
+    color:#155724 ;
+    font-weight: bold;   
+}
+
+
+#choices > li.correct::after{
+    content: '   ...正解👍';
+}
+
+
+
+button {
+    text-align: center;
+    padding: 10px auto;
+    font-size:20px;
+    font-weight:bold;
+}
+
+
+#reading{
+color:white;
+}
+#modal
+{
+    background:green;
+    width:400px;
+    height:400px;
+    padding:30px 20px 30px 20px;
+    border-radius:14px;
+    position:absolute;
+    margin:0 auto;
+    right:0;
+    left:0;
+    transition:transform 0.4s;
+    font-size:25px;
+    color:white;
+    font-weight:bold;
+    text-align: center;
+    line-height:80px;
+}
+#modal2 
+{
+    background:red;
+    width:400px;
+    height:400px;
+    padding:30px 10px 30px 10px;
+    border-radius:14px;
+    position:absolute;
+    /* margin-top:50px; */
+    right:0;
+    left:0;
+    transition:transform 0.4s;
+    font-size:30px;
+    color:white;
+    font-weight:bold;
+    text-align: center;
+    line-height:50px;
+}
+#modal3 
+{
+    background:rgb(20, 104, 138);
+    width:400px;
+    height:400px;
+    padding:20px;
+    border-radius:14px;
+    position:absolute;
+    /* margin:0 auto; */
+    right:0;
+    left:0;
+    transition:transform 0.4s;
+    font-size:40px;
+    color:rgb(238, 225, 225);
+    font-weight:bold;
+    text-align: center;
+    line-height:100px;
+}
+#modal > p{
+    margin:0 0 20px;
+}
+#modal2 > p{
+    margin:0 0 20px;
+}
+#mask.hidden{
+    display:none;
+}
+#modal.hidden,
+#modal2.hidden,
+#modal3.hidden
+{
+    transform:translate(0, -600px);
+}
+
+#modal > button,
+#modal2 > button,
+#modal1 > button
+{
+    padding:20px 5px;
+    width:150px;
+    font-size:20px;
+    font-weight: bold;
+    border-radius:10px;
+    background:rgb(208, 200, 200);
+}
+img{
+    width:170px;
+    height:170px;
+}
+
+
+
+
+
+
